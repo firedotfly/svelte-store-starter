@@ -2,25 +2,25 @@
 	"title": "Country Rye",
 	"type": "bread",
 	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-	"img": "https://images.unsplash.com/photo-1509440159596-0249088772ff",
+	"img": "https://images.unsplash.com/photo-1509440159596-0249088772ff?&w=400",
 	"price": 16
 }, {
 	"title": "House Sourdough",
 	"type": "bread",
 	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-	"img": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73",
+	"img": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?&w=400",
 	"price": 142
 }, {
 	"title": "Country White",
 	"type": "bread",
 	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-	"img": "https://images.unsplash.com/photo-1533417177250-227597f5b264",
+	"img": "https://images.unsplash.com/photo-1533417177250-227597f5b264?&w=400",
 	"price": 97
 }, {
 	"title": "100% Seeded Rye",
 	"type": "bread",
 	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-	"img": "https://images.unsplash.com/photo-1603984042729-a34adc2ac9d0",
+	"img": "https://images.unsplash.com/photo-1603984042729-a34adc2ac9d0?&w=400",
 	"price": 180
 }, {
 	"title": "Potato Sourdough",
