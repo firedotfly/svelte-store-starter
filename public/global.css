@@ -182,7 +182,7 @@ nav button svg {
     font-size: .8rem;
     cursor: pointer;
 }
-.catalogue-type ul li a {
+.catalogue-type ul li {
     padding: .8rem .5rem;
     display: block;
 }
@@ -518,9 +518,10 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     display: flex;
 }
 .product-image {
-    width: 40%;
+    width: 100%;
     display: grid;
-    height: 500px;
+	height: 300px;
+	object-fit: cover;
 }
 .product-details {
     padding: 0 2rem;
