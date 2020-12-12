@@ -453,7 +453,7 @@ var app = (function () {
     	let img_src_value;
     	let t18;
     	let div3;
-    	let t20;
+    	let t19;
     	let p;
     	let current;
     	cartsvg = new Cart({ $$inline: true });
@@ -503,8 +503,7 @@ var app = (function () {
     			img = element("img");
     			t18 = space();
     			div3 = element("div");
-    			div3.textContent = "1499";
-    			t20 = space();
+    			t19 = space();
     			p = element("p");
     			attr_dev(span, "class", "brand-color");
     			add_location(span, file$1, 14, 36, 400);
@@ -530,14 +529,14 @@ var app = (function () {
     			add_location(h1, file$1, 37, 3, 771);
     			attr_dev(div2, "class", "catalogue-total");
     			add_location(div2, file$1, 38, 3, 788);
-    			if (img.src !== (img_src_value = "https://assets.abfrlcdn.com/img/app/product/3/327515-1630626-large.jpg")) attr_dev(img, "src", img_src_value);
+    			if (img.src !== (img_src_value = "")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "loading", "lazy");
     			attr_dev(img, "alt", "");
     			add_location(img, file$1, 41, 5, 882);
     			attr_dev(div3, "class", "product-price");
-    			add_location(div3, file$1, 42, 5, 992);
+    			add_location(div3, file$1, 42, 5, 922);
     			attr_dev(p, "class", "product-name");
-    			add_location(p, file$1, 43, 5, 1035);
+    			add_location(p, file$1, 43, 5, 961);
     			attr_dev(div4, "class", "product");
     			add_location(div4, file$1, 40, 4, 855);
     			attr_dev(div5, "class", "catalogue");
@@ -589,7 +588,7 @@ var app = (function () {
     			append_dev(div4, img);
     			append_dev(div4, t18);
     			append_dev(div4, div3);
-    			append_dev(div4, t20);
+    			append_dev(div4, t19);
     			append_dev(div4, p);
     			current = true;
     		},

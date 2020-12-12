@@ -39,8 +39,8 @@
 			<div class="catalogue-total"></div>
 			<div class="catalogue">
 				<div class="product">
-					<img src="https://assets.abfrlcdn.com/img/app/product/3/327515-1630626-large.jpg" loading="lazy" alt="">
-					<div class="product-price">1499</div>
+					<img src="" loading="lazy" alt="">
+					<div class="product-price"></div>
 					<p class="product-name"></p>
 				</div>
 			</div>
