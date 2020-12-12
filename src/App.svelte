@@ -1,9 +1,14 @@
 <script>
 	import CartSVG from './components/Cart.svelte';
 
-	const load = async( () => {
-		
-	})
+	let results = [], filters = [];
+
+	const load = async () => {
+		const res = await fetch(`https://raw.githubusercontent.com/firedotfly/svelte-store-starter/main/src/products.json`);
+		const results = await res.json();
+ 	}
+	load();
+
 </script>
 
 <nav class="navbar" role="navigation" aria-label="navigation">

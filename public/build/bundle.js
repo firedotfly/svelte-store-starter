@@ -507,47 +507,47 @@ var app = (function () {
     			t20 = space();
     			p = element("p");
     			attr_dev(span, "class", "brand-color");
-    			add_location(span, file$1, 9, 36, 205);
+    			add_location(span, file$1, 14, 36, 400);
     			attr_dev(a, "class", "brand-logo");
     			attr_dev(a, "href", "/");
-    			add_location(a, file$1, 9, 1, 170);
-    			add_location(li0, file$1, 11, 2, 257);
-    			add_location(li1, file$1, 12, 2, 274);
-    			add_location(li2, file$1, 13, 2, 292);
-    			add_location(li3, file$1, 14, 2, 310);
-    			add_location(ul0, file$1, 10, 1, 250);
-    			add_location(button, file$1, 16, 1, 336);
+    			add_location(a, file$1, 14, 1, 365);
+    			add_location(li0, file$1, 16, 2, 452);
+    			add_location(li1, file$1, 17, 2, 469);
+    			add_location(li2, file$1, 18, 2, 487);
+    			add_location(li3, file$1, 19, 2, 505);
+    			add_location(ul0, file$1, 15, 1, 445);
+    			add_location(button, file$1, 21, 1, 531);
     			attr_dev(nav, "class", "navbar");
     			attr_dev(nav, "role", "navigation");
     			attr_dev(nav, "aria-label", "navigation");
-    			add_location(nav, file$1, 8, 0, 106);
-    			add_location(h2, file$1, 24, 3, 460);
+    			add_location(nav, file$1, 13, 0, 301);
+    			add_location(h2, file$1, 29, 3, 655);
     			attr_dev(div0, "class", "catalogue-type");
-    			add_location(div0, file$1, 23, 2, 428);
-    			add_location(li4, file$1, 28, 4, 511);
-    			add_location(ul1, file$1, 27, 3, 502);
-    			add_location(div1, file$1, 26, 2, 493);
-    			add_location(h1, file$1, 32, 3, 576);
+    			add_location(div0, file$1, 28, 2, 623);
+    			add_location(li4, file$1, 33, 4, 706);
+    			add_location(ul1, file$1, 32, 3, 697);
+    			add_location(div1, file$1, 31, 2, 688);
+    			add_location(h1, file$1, 37, 3, 771);
     			attr_dev(div2, "class", "catalogue-total");
-    			add_location(div2, file$1, 33, 3, 593);
+    			add_location(div2, file$1, 38, 3, 788);
     			if (img.src !== (img_src_value = "https://assets.abfrlcdn.com/img/app/product/3/327515-1630626-large.jpg")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "loading", "lazy");
     			attr_dev(img, "alt", "");
-    			add_location(img, file$1, 36, 5, 687);
+    			add_location(img, file$1, 41, 5, 882);
     			attr_dev(div3, "class", "product-price");
-    			add_location(div3, file$1, 37, 5, 797);
+    			add_location(div3, file$1, 42, 5, 992);
     			attr_dev(p, "class", "product-name");
-    			add_location(p, file$1, 38, 5, 840);
+    			add_location(p, file$1, 43, 5, 1035);
     			attr_dev(div4, "class", "product");
-    			add_location(div4, file$1, 35, 4, 660);
+    			add_location(div4, file$1, 40, 4, 855);
     			attr_dev(div5, "class", "catalogue");
-    			add_location(div5, file$1, 34, 3, 632);
+    			add_location(div5, file$1, 39, 3, 827);
     			attr_dev(div6, "class", "catalogue-display");
-    			add_location(div6, file$1, 31, 2, 541);
+    			add_location(div6, file$1, 36, 2, 736);
     			attr_dev(div7, "class", "catalogue-wrapper");
-    			add_location(div7, file$1, 22, 1, 394);
+    			add_location(div7, file$1, 27, 1, 589);
     			attr_dev(div8, "id", "app");
-    			add_location(div8, file$1, 21, 0, 378);
+    			add_location(div8, file$1, 26, 0, 573);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -625,18 +625,31 @@ var app = (function () {
     function instance$1($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("App", slots, []);
+    	let results = [], filters = [];
 
-    	const load = async(() => {
-    		
-    	});
+    	const load = async () => {
+    		const res = await fetch(`https://raw.githubusercontent.com/firedotfly/svelte-store-starter/main/src/products.json`);
+    		const results = await res.json();
+    	};
 
+    	load();
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<App> was created with unknown prop '${key}'`);
     	});
 
-    	$$self.$capture_state = () => ({ CartSVG: Cart, load });
+    	$$self.$capture_state = () => ({ CartSVG: Cart, results, filters, load });
+
+    	$$self.$inject_state = $$props => {
+    		if ("results" in $$props) results = $$props.results;
+    		if ("filters" in $$props) filters = $$props.filters;
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
     	return [];
     }
 
