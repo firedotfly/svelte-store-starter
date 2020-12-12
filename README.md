@@ -1,9 +1,10 @@
 ---
 
 This will be starter file for our Svelte Store Tutorial. All you have to do is download the folder by click on the green button with a down array and Code text in it. Unzip the folder and Install the dependencies...
-
+```
 cd svelte-store-starter
 npm install
+```
 
 ...then start [Rollup](https://rollupjs.org):
 
