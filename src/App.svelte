@@ -28,12 +28,13 @@
 	<div class="catalogue-wrapper">
 		<div class="catalogue-type">
 			<h2>Bakery Items</h2>
+			<div>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
 		</div>
-		<div>
-			<ul>
-				<li></li>
-			</ul>
-		</div>
+
 		<div class="catalogue-display">
 			<h1>Home</h1>
 			<div class="catalogue-total"></div>
