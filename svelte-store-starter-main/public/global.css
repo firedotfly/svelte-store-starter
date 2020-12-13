@@ -50,22 +50,15 @@ nav {
     text-align: center;
     margin-top: 2rem;
 }
-nav .cart {
+nav button {
 	background: none;
     border: none;
 }
-nav  svg {
+nav button svg {
 	width: 20px;
 	height: 20px;
 	justify-self: right;
 }
-
-nav button{
-    border:  none;
-    background: none;
-}
-
-
 
 .nav_buttons li {
     position: relative;
@@ -193,10 +186,6 @@ nav button{
     padding: .8rem .5rem;
     display: block;
 }
-.catalogue-type ul li  a{
-    padding: .8rem .5rem;
-    display: block;
-}
 .catalogue-display {
     width: 80%}
 .catalogue-type ul li:hover {
@@ -210,23 +199,10 @@ nav button{
     margin: 3rem 2rem;
     font-family: Monda, sans-serif;
 }
-#container .back-button {
-	display: flex;
-	align-items: center;
-	background: none;
-	border: none;
-	margin-bottom: 2rem;
-	cursor: pointer;
-	outline: none;
-}
-#container svg {
-	width: 25px;
-	height: 25px;
-	margin-right:.5rem;
-}
 .product-image {
     width: 100%;
     height: 300px;
+    display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: repeat(4, 1fr);
     grid-gap: .25rem;
@@ -238,8 +214,7 @@ nav button{
 }
 .image-aside img, .image-main img {
     width: 100%;
-
-}
+    max-height: 100%}
 .product-details {
     padding: 2rem 0;
 }
@@ -406,15 +381,10 @@ to {
     font-size: .8rem;
     font-weight: 700;
     margin-top: .5rem;
+    cursor: pointer;
     border: 0;
     background: #c12e48;
-	display: block;
-	cursor: pointer;
-
-}
-.action-buttons button:disabled {
-	opacity: .5;
-	cursor: not-allowed;
+    display: block;
 }
 .size-prompt {
     color: #891428;
@@ -549,6 +519,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 .product-image {
     width: 100%;
+    display: grid;
 	height: 300px;
 	object-fit: cover;
 }

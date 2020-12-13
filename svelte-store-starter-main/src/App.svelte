@@ -40,7 +40,7 @@
 			<div class="catalogue-total"></div>
 			<div class="catalogue">
 				<div class="product">
-					<img src="" loading="lazy" alt="" class="product-image">
+					<img src="" loading="lazy" alt="">
 					<div class="product-price"></div>
 					<p class="product-name"></p>
 				</div>
